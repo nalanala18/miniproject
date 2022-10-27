@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mini_project_1/calculator.dart';
 import 'package:mini_project_1/calender/main.dart';
 import 'package:mini_project_1/splashscreen.dart';
 import 'package:mini_project_1/todo.dart';
@@ -37,16 +36,6 @@ class menuDrawer extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => TodoApp())
               )
             },
-          ),
-          ListTile(
-            leading: Icon(Icons.calculate),
-            title: Text('Simple Calculator'),
-            onTap: () => {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => MyApp())
-              )
-              },
           ),
           ListTile(
             leading: Icon(Icons.calendar_view_month_sharp),
